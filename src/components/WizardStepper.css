@@ -1,0 +1,69 @@
+.wizardStepper {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.wizardStep {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.8rem;
+  background: var(--surface-soft);
+  display: grid;
+  gap: 0.45rem;
+  text-align: left;
+  transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.wizardStepBadge {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  border: 1px solid #7b8785;
+  display: grid;
+  place-items: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #324140;
+  background: #fff;
+}
+
+.wizardStepText {
+  font-size: 0.88rem;
+  color: #273534;
+  font-weight: 600;
+}
+
+.wizardStep.current {
+  border-color: var(--primary);
+  background: #ecf7f6;
+  transform: translateY(-1px);
+}
+
+.wizardStep.current .wizardStepBadge {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.wizardStep.done {
+  border-color: #6f9a96;
+  background: #f0f6f5;
+}
+
+.wizardStep.done .wizardStepBadge {
+  border-color: #3f7771;
+  color: #2c625d;
+}
+
+.wizardStep:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 960px) {
+  .wizardStepper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

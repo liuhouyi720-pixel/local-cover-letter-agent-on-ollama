@@ -1,0 +1,49 @@
+:root {
+  --font-heading: "Sora", "Segoe UI", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, monospace;
+
+  --bg: #f3f1ea;
+  --bg-gradient: radial-gradient(circle at 10% 0%, #fffaf0 0%, #f3f1ea 45%, #ece8df 100%);
+  --surface: #ffffff;
+  --surface-soft: #f7f5ef;
+  --text: #1f2a2a;
+  --muted: #5c6b69;
+  --primary: #0f766e;
+  --primary-strong: #0b5f58;
+  --accent: #c0873d;
+  --danger: #b42318;
+  --border: #d7d9d3;
+  --ring: rgba(15, 118, 110, 0.28);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 5px 18px rgba(33, 49, 47, 0.08);
+  --shadow-md: 0 12px 30px rgba(28, 44, 42, 0.11);
+
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+}

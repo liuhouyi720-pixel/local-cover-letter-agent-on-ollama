@@ -1,0 +1,48 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+.vite/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env files
+.env
+.env.*
+!.env.example
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# temp files
+*.tmp
+*.temp
+*.swp
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# local artifacts
+coverage/
+.cache/
+tools/export-helper/local-config.json
+.codex/
+cover-letters/
+output/
+exports/
+*.pdf
+*-Cover Letter-*.docx
+*-Cover Letter-*.txt
